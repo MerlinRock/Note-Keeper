@@ -4,6 +4,12 @@ const $saveNoteBtn = $(".save-note");
 const $newNoteBtn = $(".new-note");
 const $noteList = $(".list-container .list-group");
 
+var express = require("express");
+
+// Sets up the Express App
+var app = express();
+var PORT = process.env.PORT || 3000;
+
 // activeNote is used to keep track of the note in the textarea
 let activeNote = {};
 
